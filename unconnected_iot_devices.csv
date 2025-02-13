@@ -1,0 +1,3 @@
+connected,ipAddress,name,description,state,status,faultStatus
+false,192.168.0.9,Smart Light,A smart lightbulb,"[]",On,Ok
+false,192.168.0.10,Smart Lock,A smart lock,"[{""fieldName"": ""engaged"", ""datatype"": ""boolean"", ""value"": ""true""}]",On,Ok
