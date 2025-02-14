@@ -265,8 +265,9 @@ class SpoofApp(QMainWindow):
     def receive_connected_iot_devices(self, devices):
         for device in devices:
             device["connected"] = True
+            if self.search_devices(device["ipAddress"]) is None:
+                self.devices.append(device)
 
-        self.devices.extend(devices)
         self.update_table.emit()
 
     def receive_iot_device_update(self, update):
